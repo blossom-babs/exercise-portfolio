@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: Ubuntu, sans-serif;
+  font-size: 1rem;
+  background: #010101;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+hr {
+  width: 10rem;
+  background-color: red;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.span {
+  color: red;
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 3;
+  top: 3rem;
+  right: 5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  transition: all 0.5s ease-out;
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #010101;
+  background: #fff;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  display: inline-block;
+  transform: rotate(45deg) translate 5x 5px;
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  background: #010101;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  background: #ff5e62;
+  transform: rotate(-45deg) translate 7px -6px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu-branding, .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #0e0e0e;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu-branding {
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu-branding.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.introduction {
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.navigation {
+  margin: 0 0 5rem 2rem;
+  text-align: center;
+}
+
+.about {
+  margin: 10rem 0;
+}
+
+.about h1 {
+  margin: 2rem 0;
+}
+
+.about p {
+  line-height: 2rem;
+}
+
+.about .btn {
+  margin-top: 2rem;
+}
+
+#projects h1 {
+  margin: 2rem 0;
+}
+
+#projects .card {
+  background: #1b1b1b;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+#projects .card h4,
+#projects .card h6 {
+  color: #c4c4c4;
+}
+
+#projects .card h4 {
+  margin-top: 1rem;
+}
+
+#projects .card .flex > div {
+  margin-top: 1rem;
+}
+
+#projects .card .flex > div i {
+  padding-right: .5rem;
+}
+
+#projects .card .flex > div:nth-child(2) {
+  margin-left: 2rem;
+}
+
+#projects .card a.btn {
+  margin-top: 2rem;
+}
+
+#projects .see-more .fas {
+  padding-right: .5rem;
+}
+
+#message {
+  margin: 10rem 0;
+}
+
+#message .card {
+  background: #1b1b1b;
+  padding: 2rem;
+}
+
+#message .card .btn {
+  margin-top: 2rem;
+  display: block;
+}
+
+#message h1 {
+  margin: 2rem 0;
+}
+
+#message input {
+  display: block;
+  padding: .5rem;
+  margin: 2rem 0;
+}
+
+#message input:focus {
+  border: red;
+  outline: red;
+}
+
+#message textarea:focus {
+  border: red;
+  outline-color: #fff;
+}
+
+@media (max-width: 4000px) {
+  #message input,
+  #message textarea {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #message input,
+  #message textarea {
+    width: 100%;
+  }
+}
+
+#socials .card {
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+#socials .card a {
+  color: red;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#socials .card a .i {
+  padding-right: 3rem;
+}
+
+#socials .card a:hover {
+  color: #fff;
+}
+
+#socials .card .btn {
+  border: #fff;
+  margin-left: -5rem;
+}
+
+#socials .card:hover {
+  background-color: #010101;
+  outline-color: red;
+}
+/*# sourceMappingURL=styles.css.map */

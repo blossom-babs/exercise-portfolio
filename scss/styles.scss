@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+
+$font: Ubuntu,
+sans-serif;
+$bg-color: linear-gradient(#ff5e62, #ff9966);
+$pink:#ff5e62;
+$black:#010101;
+$white:#fff;
+$grey:#c4c4c4;
+$red:red;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+html,
+body {
+  font-family: $font;
+  font-size: 1rem;
+  background: $black;
+  color: $white;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+@mixin theme($light-theme:true) {
+  @if $light-theme {
+    background: lighten($black, 100%);
+    color: darken($white, 100%);
+  }
+}
+
+@mixin darken($light-theme:true) {
+  @if $light-theme {
+    background: $black;
+  }
+
+  @else {
+    background: $white;
+  }
+}
+
+.light {
+  @include theme ($light-theme:true);
+}
+
+hr {
+  width: 10rem;
+  // background:red;
+  background-color: $red;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.span {
+  // color: $pink;
+  color: red;
+}
+
+
+.menu-btn {
+  position: fixed;
+  z-index: 3;
+  top: 3rem;
+  right: 5rem;
+  // border: 3px solid blue;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    @include easeOut;
+    width: 28px;
+    height: 3px;
+    // border: 3px solid red;
+    margin: 0 0 5px 0;
+    @include darken ($light-theme: true);
+    @include darken($light-theme: false);
+
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+
+      // line 1
+      &:nth-child(1) {
+        // background: $pink;
+        display: inline-block;
+        transform: rotate(45deg) translate (5x 5px);
+      }
+
+      // //line 2
+      &:nth-child(2) {
+        background: $black;
+      }
+
+      // // line 3
+      &:nth-child(3) {
+        background: $pink;
+        transform: rotate(-45deg) translate (7px -6px);
+      }
+    }
+  }
+
+}
+
+.menu {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: lighten($black, 5);
+    // width: 100%;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      // slide in
+      transform: translate3d(0, 0, 0);
+
+    }
+  }
+
+  &-branding {
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show {
+      // slide in
+      transform: translate3d(0, 0, 0);
+
+    }
+  }
+}
+
+
+// .title {
+//   text-transform: uppercase;
+//   letter-spacing: 5px;
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   transform: translate(-50%, -50%);
+//   color: $black;
+// }
+
+// .title::before {
+//   content: 'I code';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   color: $white;
+//   overflow: hidden;
+//   // border-right: 1px solid #000;
+//   white-space: nowrap;
+//   animation: type 5s infinite;
+//   // animation-iteration-count: 2;
+// }
+
+// @keyframes type {
+//   0% {
+//     width: 0;
+//   }
+
+//   50% {
+//     width: 100%;
+//   }
+
+//   100% {
+//     width: 0;
+//   }
+// }
+
+
+// introduction 
+
+.introduction {
+  text-align: center;
+  margin: 10rem 0;
+
+
+
+}
+
+
+// navigation
+
+.navigation {
+  margin: 0 0 5rem 2rem;
+  text-align: center;
+}
+
+// about
+
+.about {
+  margin: 10rem 0;
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+// projects
+
+#projects {
+  h1 {
+    margin: 2rem 0;
+  }
+
+  .card {
+    background: lighten($black, 10);
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    h4,
+    h6 {
+      color: $grey;
+    }
+
+    h4 {
+      margin-top: 1rem;
+    }
+
+    .flex>div {
+      margin-top: 1rem;
+    }
+
+    .flex>div i {
+      padding-right: .5rem;
+    }
+
+    .flex>div:nth-child(2) {
+      margin-left: 2rem;
+    }
+
+    a.btn {
+      margin-top: 2rem;
+    }
+
+
+  }
+
+  .see-more .fas {
+    padding-right: .5rem;
+  }
+
+}
+
+
+// message | contact me
+
+#message {
+  margin: 10rem 0;
+
+  .card {
+    background: lighten($black, 10);
+    //align-items: center;
+    padding: 2rem;
+
+    .btn {
+      margin-top: 2rem;
+      display: block;
+    }
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  input {
+    display: block;
+    padding: .5rem;
+    margin: 2rem 0;
+    // border: 1px solid $red;
+    // background: darken($white, 10);
+    // border: 5px 10px 1px 2px solid red;
+
+
+    &:focus {
+      border: $red;
+      outline: $red;
+    }
+  }
+
+  textarea:focus {
+    border: $red;
+    outline-color: $white;
+  }
+
+}
+
+@media (max-width: 4000px) {
+  #message {
+    // .card{
+    //   align-items: center;
+    // }
+
+    input,
+    textarea {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #message {
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+#socials {
+  .card {
+    margin-bottom: 2rem;
+    padding: 3rem;
+
+
+    a {
+      //color: lighten(red, $amount: 10);
+      color: red;
+      text-decoration: none;
+      font-size: 2rem;
+      // text-align: center;
+
+      .i {
+        padding-right: 3rem;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+
+
+    .btn {
+      border: $white;
+      margin-left: -5rem;
+    }
+
+    &:hover {
+      background-color: $black;
+      outline-color: red;
+    }
+  }
+
+
+}
