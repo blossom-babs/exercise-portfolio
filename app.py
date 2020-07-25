@@ -16,9 +16,9 @@ def message():
     
         name = form['name']
         email = form['email']
-        message = form['message']
+        # message = form['message'] , message=message
 
-        new_message = Messages(name=name, email=email, message=message)
+        new_message = Messages(name=name, email=email)
         new_message = new_message.save()
         print(new_message)
     

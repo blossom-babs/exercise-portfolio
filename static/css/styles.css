@@ -180,6 +180,7 @@ img {
 
 #projects .see-more .fas {
   padding-right: .5rem;
+  margin-right: 5rem;
 }
 
 #message {
@@ -257,5 +258,129 @@ img {
 #socials .card:hover {
   background-color: #010101;
   outline-color: red;
+}
+
+.cssload-preloader {
+  font-family: Arial, Tahoma;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+  display: box;
+  display: -o-box;
+  display: -ms-box;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  box-pack: center;
+  -o-box-pack: center;
+  -ms-box-pack: center;
+  justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  box-align: center;
+  -o-box-align: center;
+  -ms-box-align: center;
+  align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  perspective: 1750px;
+  -o-perspective: 1750px;
+  -ms-perspective: 1750px;
+  -webkit-perspective: 1750px;
+  -moz-perspective: 1750px;
+  overflow: hidden;
+  animation: wobble 16.25s ease-in-out infinite;
+  -o-animation: wobble 16.25s ease-in-out infinite;
+  -ms-animation: wobble 16.25s ease-in-out infinite;
+  -webkit-animation: wobble 16.25s ease-in-out infinite;
+  -moz-animation: wobble 16.25s ease-in-out infinite;
+  padding-bottom: 7em;
+}
+
+.cssload-preloader > span {
+  font-size: 175px;
+  animation: 16.25s ease-in-out infinite;
+  -o-animation: 16.25s ease-in-out infinite;
+  -ms-animation: 16.25s ease-in-out infinite;
+  -webkit-animation: 16.25s ease-in-out infinite;
+  -moz-animation: 16.25s ease-in-out infinite;
+  color: transparent;
+  text-shadow: 0 0 0px brown;
+}
+
+span:nth-child(-n+3) {
+  animation-delay: -8.13s;
+  -o-animation-delay: -8.13s;
+  -ms-animation-delay: -8.13s;
+  -webkit-animation-delay: -8.13s;
+  -moz-animation-delay: -8.13s;
+}
+
+span:nth-child(1),
+span:nth-last-child(1) {
+  animation-name: blur-1;
+  -o-animation-name: blur-1;
+  -ms-animation-name: blur-1;
+  -webkit-animation-name: blur-1;
+  -moz-animation-name: blur-1;
+}
+
+span:nth-child(2),
+span:nth-last-child(2) {
+  animation-name: blur-2;
+  -o-animation-name: blur-2;
+  -ms-animation-name: blur-2;
+  -webkit-animation-name: blur-2;
+  -moz-animation-name: blur-2;
+}
+
+span:nth-child(3),
+span:nth-last-child(3) {
+  animation-name: blur-3;
+  -o-animation-name: blur-3;
+  -ms-animation-name: blur-3;
+  -webkit-animation-name: blur-3;
+  -moz-animation-name: blur-3;
+}
+
+@keyframes blur-1 {
+  50% {
+    text-shadow: 0 0 0.15em white;
+  }
+}
+
+@keyframes blur-2 {
+  50% {
+    text-shadow: 0 0 0.075em maroon;
+  }
+}
+
+@keyframes blur-3 {
+  50% {
+    text-shadow: 0 0 0.05em white;
+  }
+}
+
+@keyframes wobble {
+  from,
+  to {
+    transform: rotateY(-45deg);
+  }
+  50% {
+    transform: rotateY(45deg);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,5 @@
+windows.onload = function (){getElementById('preloader').style.display = 'none';}
+
 // getting all the elements
 
 const menuBtn = document.querySelector('.menu-btn')
