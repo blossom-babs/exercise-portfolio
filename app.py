@@ -13,16 +13,16 @@ def message():
     if request.method == 'POST':
     
         form = request.form
-    
+        print(form)
         name = form['name']
         email = form['email']
-        # message = form['message'] , message=message
+        message = form['message']
 
-        new_message = Messages(name=name, email=email)
+        new_message = Messages(name=name, email=email, message=message)
         new_message = new_message.save()
         print(new_message)
     
-        return 'Message sent'
+        return redirect(url_for('success.html'))
     return render_template ('index.html')
 
 app.run(port=3000, debug=True)
