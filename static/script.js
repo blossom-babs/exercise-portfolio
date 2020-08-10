@@ -33,15 +33,15 @@ window.addEventListener('load', function () {
 
    function setTheme(mode) {
        if (mode == 'light') {
-           document.getElementById('theme-style').href = 'css/light.css'
+           document.getElementById('theme-style').href = `static/css/light.css`
        } else if (mode == 'blue') {
-           document.getElementById('theme-style').href = 'css/blue.css'
+           document.getElementById('theme-style').href = 'static/css/blue.css'
        } else if (mode == "purple") {
-           document.getElementById('theme-style').href = 'css/purple.css'
+           document.getElementById('theme-style').href = 'static/css/purple.css'
        } else if (mode == 'dark') {
-           document.getElementById('theme-style').href = 'css/styles.css'
+           document.getElementById('theme-style').href = 'static/css/styles.css'
        } else {
-           document.getElementById('theme-style').href = 'css/styles.css'
+           document.getElementById('theme-style').href = 'static/css/styles.css'
        }
 
        localStorage.setItem('theme', mode)

@@ -8,6 +8,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/success')
+def success():
+    return render_template('success.html')
+
+
 @app.route('/', methods=['GET', 'POST'])
 def message():
     if request.method == 'POST':
@@ -21,8 +26,12 @@ def message():
         new_message = Messages(name=name, email=email, message=message)
         new_message = new_message.save()
         print(new_message)
-    
-        return redirect(url_for('success.html'))
+        
+        try:
+            return redirect(url_for('success'))
+        except:
+            return redirect(url_for('failure'))
+        
     return render_template ('index.html')
 
 app.run(port=3000, debug=True)
