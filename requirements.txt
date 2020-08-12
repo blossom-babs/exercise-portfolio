@@ -3,6 +3,7 @@ click==7.1.2
 configparser==4.0.2
 contextlib2==0.6.0.post1
 distlib==0.3.1
+dnspython==1.16.0
 filelock==3.0.12
 Flask==1.1.2
 gunicorn==19.10.0
@@ -14,7 +15,7 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 pathlib2==2.3.5
 pymodm==0.4.3
-pymongo==3.10.1
+pymongo[tls,srv]==3.6.1
 scandir==1.10.0
 singledispatch==3.4.0.3
 six==1.15.0

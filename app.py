@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from models import Messages
-# futures==3.3.0
+# futures==3.3.0 pymongo==3.10.1
 
 app = Flask(__name__)
 
