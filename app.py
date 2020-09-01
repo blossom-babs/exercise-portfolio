@@ -1,11 +1,17 @@
 from flask import Flask, render_template, request, redirect, url_for
 from models import Messages
+# futures==3.3.0 pymongo==3.10.1
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -21,8 +27,14 @@ def message():
         new_message = Messages(name=name, email=email, message=message)
         new_message = new_message.save()
         print(new_message)
-    
-        return redirect(url_for('success.html'))
+        
+        try:
+            return redirect(url_for('success'))
+        except:
+            return redirect(url_for('failure'))
+        
     return render_template ('index.html')
 
-app.run(port=3000, debug=True)
+
+if __name__ == "__main__":
+    app.run(debug=True, port=3000)

@@ -238,6 +238,12 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  #message .card .btn {
+    width: 25rem;
+  }
+}
+
 #socials .card {
   margin-bottom: 2rem;
   padding: 3rem;
@@ -270,6 +276,9 @@ img {
 @media (max-width: 800px) {
   .technologies {
     margin-top: 5rem;
+  }
+  .grid {
+    margin-left: 2rem;
   }
 }
 

@@ -20,9 +20,9 @@
     </script>
     <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
 
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link id="theme-style" rel="stylesheet" href="">
+<script defer src="{{url_for('static', filename='script.js')}}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+<link id="theme-style" rel="stylesheet" href="">
 
 </head>
 
@@ -32,7 +32,7 @@
             <div class="container">
                 <h1 class="display-4">Got your Message<span class="span">!</span></h1>
                 <p class="lead">I'll be in touch as soon as possible.
-                    In the meantime, go back to <span class="span"> <a href="index.html">the website.</a> </span>
+                    In the meantime, go back to <span class="span"> <a href="{{url_for('index')}}">the website.</a> </span>
                 </p>
             </div>
         </div>

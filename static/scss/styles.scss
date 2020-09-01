@@ -319,6 +319,18 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  #message {
+    .card {
+      .btn {
+        width: 25rem;
+        //color: $black;
+      }
+    }
+  }
+}
+
+
 
 //socials 
 
@@ -368,6 +380,9 @@ img {
     margin-top: 5rem;
   }
 
+  .grid {
+    margin-left: 2rem;
+  }
 
 
 }
@@ -531,23 +546,23 @@ img {
 
 // success
 
-.jumbotron{
+.jumbotron {
   margin-top: 5rem;
 
- .container h1{
+  .container h1 {
     font-size: 2rem;
     color: $black;
   }
 
-  .lead{
+  .lead {
     margin-top: 2rem;
     color: $black;
 
-    a{
+    a {
       color: red;
       text-decoration: underline;
 
-      &:hover{
+      &:hover {
         color: $black;
       }
     }
