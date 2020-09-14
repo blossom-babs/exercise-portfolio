@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html class="no-js">
 
 <head>
   <meta charset="utf-8" />
@@ -7,6 +6,7 @@
   <title>Blossom</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- bootstrap files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -18,28 +18,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <!-- font awesome kit -->
   <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
-
-  <script defer src="{{url_for('static', filename='script.js')}}"></script>
-  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <!-- js file -->
+  <script defer src="/script.js"></script>
+  <!-- css files -->
+  <link rel="stylesheet" href="/css/styles.css">
   <link id="theme-style" rel="stylesheet" href="">
 
 </head>
 
 <body>
   <div class="container container-fluid">
-
-    <!-- Page Preloder -->
-    <div class="d-none" id="preloder">
-      <div class="loader"></div>
-    </div>
-
-    <div class="d-none loader">
-      <div class="lds-grid">
-        <div class="mr-3 w-100 h-100"></div>
-        <div class="mx-3 w-100 h-100"></div>
-      </div>
-    </div>
 
     <!-- header / hamburger -->
     <div class="nav">
@@ -54,11 +44,10 @@
     </div>
 
     <!-- INTRODUCTION -->
-
     <section class="introduction">
       <div>
         <h1 class="intro--name">I'm Blosso<span class="span">m.</span></h1>
-        <p class="intro--about">I build pages that gets hosted on the web.</p>
+        <p class="intro--about">I build scalable and responsive web pages that gets hosted on the web.</p>
       </div>
 
 
@@ -69,14 +58,14 @@
         <div data-attribute="purple" id="purple-theme" class="circles"></div>
 
       </div>
-      <div class="em"> <em>* click on the circle to change the theme.</em></div>
-      <div><em>* Refresh your page to save preferred theme.</em>
+      <div class="em"> <em>Change theme.</em></div>
+      <div><em>Refresh page to save preferred theme.</em>
       </div>
 
 
     </section>
-    <!-- projects -->
 
+    <!-- projects -->
     <section id="projects" class="projects">
       <div>
         <hr>
@@ -85,7 +74,7 @@
           <!-- first row -->
           <div class="col-lg-4">
             <div class="card">
-              <img src="static/images/insure.png">
+              <img src="/images/insure.png">
               <h4>Insure</h4>
               <h6>HTML5 | CSS3</h6>
               <div class="flex">
@@ -100,7 +89,7 @@
           </div>
           <div class="col-lg-4">
             <div class="card">
-              <img src="/static/images/pfm.png">
+              <img src="/images/pfm.png">
               <h4>Finance Manager</h4>
               <h6>HTML5 | CSS3 | Javascript</h6>
               <div class="flex">
@@ -115,7 +104,7 @@
           </div>
           <div class="col-lg-4">
             <div class="card">
-              <img src="/static/images/vote-app.png">
+              <img src="/images/vote-app.png">
               <h4>Voting App</h4>
               <h6>HTML5 | CSS3 | Javascript</h6>
               <div class="flex">
@@ -129,9 +118,56 @@
             </div>
           </div>
           <!-- second row -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="/images/vote-app.png">
+              <h4>Voting App</h4>
+              <h6>HTML5 | CSS3 | Javascript</h6>
+              <div class="flex">
+                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
+                      class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
+                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="/images/vote-app.png">
+              <h4>Voting App</h4>
+              <h6>HTML5 | CSS3 | Javascript</h6>
+              <div class="flex">
+                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
+                      class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
+                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="/images/vote-app.png">
+              <h4>Voting App</h4>
+              <h6>HTML5 | CSS3 | Javascript</h6>
+              <div class="flex">
+                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
+                      class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
+                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <a class="see-more btn btn-md btn-outline-danger" href="#"><i class="fas fa-arrow-right"></i>Click to see More</a>
+      <a class="see-more btn btn-md btn-outline-danger" href="#">
+        <i class="fas fa-arrow-right"></i>Click to see More</a>
     </section>
 
     <!-- about me-->
@@ -140,10 +176,11 @@
       <div>
         <hr style="width: 10rem; background: red;">
         <h1 class="about-h1">Hey there !</h1>
-        <p>My name is Blossom. I'm a FrontEnd developer.
-          I particularly enjoy html, sass, javascript and everything involved in bringing the web page to life. I
-          sometimes
-          write its flask. When I am not coding, I am thinking about societal constructs, aliens and
+        <p>My name is Blossom. I'm a FrontEnd developer. I believe in web accessebility and making the internet usable
+          for all. Frontend engineering is one of the most important tool to achieveing this.
+          I build simple web pages and write more complex ones using frameworks.
+          When I am not coding or learning to, I am thinking about
+          societal constructs, aliens and
           animals
           (particularly cats and dogs). Occasionally, I write about them too.
         </p>
@@ -153,69 +190,54 @@
     </section>
 
     <!-- My socials -->
-    <section id="socials" class="socials">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <a href=""><i class="i fab fa-twitter"></i> Twitter</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <a href="#"><i class="i fas fa-spinner"></i> Repl.it</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <a href="#"><i class="i fab fa-github"></i> Github</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <a href="#"><i class="i fab fa-github"></i>LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="last-section">
+      <hr style="width: 10rem; background: red;">
 
-    <!-- message me-->
-    <section id="message" class="message">
-      <div class="flex">
-        <div class="message-card-container">
-          <hr>
-          <h1>Contact M<span class="span">e.</span></h1>
-          <div class="card">
-            <form action="/" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea id="" cols="30" rows="5" name="message" placeholder="Leave a Message"></textarea>
-              <button type="submit" class="btn btn-danger btn-md">Send</button>
-            </form>
+      <section id="socials" class="socials">
+        <h1>Get in touch!</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <a href=""><i class="i fab fa-twitter"></i> Twitter</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <a href="#"><i class="i fas fa-spinner"></i> Repl.it</a>
+            </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <a href="#"><i class="i fab fa-github"></i> Github</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <a href="#"><i class="i fab fa-github"></i>LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- technologies -->
-        <div class="technologies">
-          <hr style="visibility: hidden;">
-          <h1>Technologies<span class="span">.</span></h1>
-          <div class="grid">
-            <div class="html"> <i class="fab fa-html5 fa-3x"></i></div>
-            <div class="css"> <i class="fab fa-css3 fa-3x"></i></div>
-            <div class="js"> <i class="fab fa-js fa-3x"></i></div>
-            <div class="git"><i class="fas fa-code-branch fa-3x"></i></div>
-            <div class="python"><i class="fab fa-python fa-3x"></i></div>
-            <div class="node"> <i class="fab fa-node fa-3x"></i></div>
-            <!-- <div class="node-js"> <i class="fab fa-node-js fa-3x"></i></div> -->
-          </div>
+      <!-- technologies -->
+      <section class="technologies">
+        <hr style="visibility: hidden;">
+        <h1>Technologies<span class="span">.</span></h1>
+        <div class="">
+          <div class="html"> <i class="fab fa-html5 fa-3x"></i></div>
+          <div class="css"> <i class="fab fa-css3 fa-3x"></i></div>
+          <div class="js"> <i class="fab fa-js fa-3x"></i></div>
+          <div class="git"><i class="fas fa-code-branch fa-3x"></i></div>
+          <div class="python"><i class="fab fa-python fa-3x"></i></div>
+          <div class="node"> <i class="fab fa-node fa-3x"></i></div>
+          <!-- <div class="node-js"> <i class="fab fa-node-js fa-3x"></i></div> -->
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
   </div>
-
-
 </body>
 
 </html>

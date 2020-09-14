@@ -330,47 +330,13 @@ img {
   }
 }
 
+// last section
 
-
-//socials 
-
-#socials {
-  .card {
-    margin-bottom: 2rem;
-    padding: 3rem;
-
-
-    a {
-      //color: lighten(red, $amount: 10);
-      color: red;
-      text-decoration: none;
-      font-size: 2rem;
-      // text-align: center;
-
-      .i {
-        padding-right: 3rem;
-      }
-
-      &:hover {
-        color: $white;
-      }
-    }
-
-
-
-    .btn {
-      border: $white;
-      margin-left: -5rem;
-    }
-
-    &:hover {
-      background-color: $black;
-      outline-color: red;
-    }
-  }
-
-
+.last-section {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 // technologies
 
