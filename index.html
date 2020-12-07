@@ -4,242 +4,249 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Blossom</title>
-  <meta name="description" content="" />
+  <meta name="description" content="Blossom's personal website" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- bootstrap files -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <!-- font awesome kit -->
-  <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
+  <!-- bootstrap files ->
   <!-- js file -->
   <script defer src="/script.js"></script>
   <!-- css files -->
   <link rel="stylesheet" href="/css/styles.css">
   <link id="theme-style" rel="stylesheet" href="">
-
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- animate on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container container-fluid">
+  <div class="body__container">
 
-    <!-- header / hamburger -->
-    <div class="nav">
-      <div><i class="fas fa-arrow-right"></i></div>
-      <div>
-        <ul>
-          <li> <a href="#projects">Portfolio</a> </li>
-          <li><a href="#about">About</a> </li>
-          <li><a href="#message">Contact</a> </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- INTRODUCTION -->
-    <section class="introduction">
-      <div>
-        <h1 class="intro--name">I'm Blosso<span class="span">m.</span></h1>
-        <p class="intro--about">I build scalable and responsive web pages that gets hosted on the web.</p>
-      </div>
-
-
-      <div class="themes">
-        <div data-attribute="dark" id="dark-theme" class="circles"></div>
-        <div data-attribute="light" id="light-theme" class="circles"></div>
-        <div data-attribute="blue" id="blue-theme" class="circles"></div>
-        <div data-attribute="purple" id="purple-theme" class="circles"></div>
-
-      </div>
-      <div class="em"> <em>Change theme.</em></div>
-      <div><em>Refresh page to save preferred theme.</em>
-      </div>
-
-
-    </section>
-
-    <!-- projects -->
-    <section id="projects" class="projects">
-      <div>
-        <hr>
-        <h1>Featured Projects</h1>
-        <div class="row">
-          <!-- first row -->
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/insure.png">
-              <h4>Insure</h4>
-              <h6>HTML5 | CSS3</h6>
-              <div class="flex">
-                <div> <a href="https://blossom-babs.github.io/insure/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/insure" class="btn btn-outline-danger btn-sm"><i
-                      class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/pfm.png">
-              <h4>Finance Manager</h4>
-              <h6>HTML5 | CSS3 | Javascript</h6>
-              <div class="flex">
-                <div> <a href="https://blossom-babs.github.io/Finance-Manager/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/Finance-Manager" class="btn btn-outline-danger btn-sm"><i
-                      class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/vote-app.png">
-              <h4>Voting App</h4>
-              <h6>HTML5 | CSS3 | Javascript</h6>
-              <div class="flex">
-                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
-                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- second row -->
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/vote-app.png">
-              <h4>Voting App</h4>
-              <h6>HTML5 | CSS3 | Javascript</h6>
-              <div class="flex">
-                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
-                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/vote-app.png">
-              <h4>Voting App</h4>
-              <h6>HTML5 | CSS3 | Javascript</h6>
-              <div class="flex">
-                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
-                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="/images/vote-app.png">
-              <h4>Voting App</h4>
-              <h6>HTML5 | CSS3 | Javascript</h6>
-              <div class="flex">
-                <div> <a href="https://vote-app.netlify.app/" class="btn btn-outline-danger btn-sm"><i
-                      class="far fa-eye"></i>Project</a>
-                </div>
-                <div><a href="https://github.com/blossom-babs/voting_system_using-javascript"
-                    class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+    <!-- navbar -->
+    <section id="nav" class="nav">
+      <div class="nav__div">
+        <div class="nav__logo">
+          <h1>Blossom
+            <span class=" nav__logo--switch">👱‍♀️</span>
+          </h1>
+        </div>
+        <div>
+          <ul id="nav-links" class="ul">
+            <li class="li"><a class="link" href="#projects">Portfolio</a> </li>
+            <li class="li"><a class="link" href="#about">About Me</a> </li>
+            <li class="li"><a class="link" href="#contact">Contact Me</a> </li>
+          </ul>
+        </div>
+        <div id="hamburger" class="hamburger">
+          <div id="fl" class="ham hamburger__first-line"></div>
+          <div id="sl" class="ham hamburger__second-line"></div>
+          <div id="tl" class="ham hamburger__third-line"></div>
         </div>
       </div>
-      <a class="see-more btn btn-md btn-outline-danger" href="#">
-        <i class="fas fa-arrow-right"></i>Click to see More</a>
+    </section>
+
+    <!-- social media links -->
+    <section class="sm">
+      <div class="sm__div"><a href="https://www.linkedin.com/in/blossom-babalola/"><img src="/images/icons/linkedin.svg"
+            alt="LinkedIn"></a></div>
+      <div class="sm__div"><a href="https://github.com/blossom-babs"><img src="/images/icons/github.svg"
+            alt="Github account"></a></div>
+      <div class="sm__div"><a href="https://twitter.com/blossom_babs"><img src="/images/icons/twitter.svg"
+            alt="Twitter account"></a></div>
+      <div class="sm__div"><a href="https://dev.to/blossom" class="sm__dev">Dev</a></div>
+      <div class="sm__vl"></div>
+    </section>
+
+    <!-- projects <img src="/images/icons/edit.svg" alt="Dev.to link"> -->
+    <section id="projects" class="projects">
+      <!-- <hr class="projects__rule" /> -->
+      <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="projects__topic">
+        Featured Projects<span class="span">.</span>
+
+      </h1>
+      <div class="projects__row">
+        <!-- first project -->
+        <div class="projects__card">
+          <h2 class="projects__identifier"><span class="span">01</span></h2>
+          <div class="projects__grid">
+            <div class="projects__img--div">
+              <img class="projects__img" src="/images/afrig_4.png">
+            </div>
+            <div class="projects__description">
+              <h3 class="projects__name">AfriG</h3>
+              <p class="projects__description--content">
+                AfriG is a modern Ecommerce platform for showcasing an africa based clothing line.
+                <button class="projects__icons">
+                  <a href="https://afrig.netlify.app/"><img class="projects__icon"
+                      src="/images/icons/external-link-symbol.svg" alt="Open project"></a>
+                  <a href="https://github.com/blossom-babs/afrig"><img class="projects__icon"
+                      src="/images/icons/github.svg" alt="Github link"></a>
+                </button>
+              </p>
+              <p class="projects__tools">
+                <ul class="projects__tools--list">
+                  <li>Gatsbyjs</li>
+                  <li>SCSS</li>
+                  <li>React-Bootstrap</li>
+                  <li>Material-UI</li>
+                  <li>GIT|github</li>
+                  <li>Netlify</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- second project -->
+        <div class="projects__card">
+          <h2 class="projects__identifier"><span class="span">02</span></h2>
+          <div class="projects__grid">
+            <div data-aos="zoom-in-right" data-aos-duration="3000" class="projects__img--div">
+              <img class="projects__img" src="/images/portfolio_light-mode.png">
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="300" class="projects__description">
+              <h3 class="projects__name">Portfolio</h3>
+              <p class="projects__description--content">
+                A visual documentation of most of my past projectsa developer's projects.
+                <button class="projects__icons">
+                  <a href="https://blo-portfolio.netlify.app/"><img class="projects__icon"
+                      src="/images/icons/external-link-symbol.svg" alt="Open project"></a>
+                  <a href="https://github.com/blossom-babs/portfolio"><img class="projects__icon"
+                      src="/images/icons/github.svg" alt="Github link"></a>
+                </button>
+              </p>
+              <p class="projects__tools">
+                <ul class="projects__tools--list">
+                  <li>React</li>
+                  <li>SCSS</li>
+                  <li>Material-UI</li>
+                  <li>GIT|github</li>
+                  <li>Netlify</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- third project -->
+        <div class="projects__card">
+          <h2 class="projects__identifier"><span class="span">03</span></h2>
+          <div class="projects__grid">
+            <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-delay="400" class="projects__img--div">
+              <img class="projects__img" src="/images/tech_trant.png">
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="500" class="projects__description">
+              <h3 class="projects__name">Tech Trant</h3>
+              <p class="projects__description--content">
+                Tech Trant is a javascript based appblog site.
+                <button class="projects__icons">
+                  <a href="https://tech-trant-demo.netlify.app/"><img class="projects__icon"
+                      src="/images/icons/external-link-symbol.svg" alt="Open project"></a>
+                  <a href="https://github.com/blossom-babs/Tech-Trant"><img class="projects__icon"
+                      src="/images/icons/github.svg" alt="Github link"></a>
+                </button>
+              </p>
+              <p class="projects__tools">
+                <ul class="projects__tools--list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>Javascript</li>
+                  <!-- <li>Nodejs</li>
+                  <li>Expressjs</li>
+                  <li>Ejs</li>
+                  <li>Mongoose</li> -->
+                  <li>GIT|github</li>
+                  <li>Netlify</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- about me-->
 
     <section id="about" class="about">
-      <div>
-        <hr style="width: 10rem; background: red;">
-        <h1 class="about-h1">Hey there !</h1>
-        <p>My name is Blossom. I'm a FrontEnd developer. I believe in web accessebility and making the internet usable
-          for all. Frontend engineering is one of the most important tool to achieveing this.
-          I build simple web pages and write more complex ones using frameworks.
-          When I am not coding or learning to, I am thinking about
-          societal constructs, aliens and
-          animals
-          (particularly cats and dogs). Occasionally, I write about them too.
-        </p>
-        <button class="btn btn-lg btn-danger"> <a href="#">Hire
-            Me</a> </button>
+      <hr>
+      <h1 class="about__h1 animate__animated animate__pulse animate__infinite infinite">Hey there 👋</h1>
+
+      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="about__alert">I'm Blossom.</h4>
+      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700" class="about__desc">I build things for the
+        web.</h4>
+      <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="about__content">Welcome to my corner
+        on the world wide web. Thank you for stopping by. I translate
+        designs into pixel perfect web pages and application,
+        while maintaining a quality code base.
+        I am responsive first and accessebility FrontEnd advocate, I believe in using technology
+        to make lives a little easier. I currently open for positions and work with the following technologies:
+      </p>
+      <div class="about__technologies">
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500" class="about__stack">
+          <li>Reactjs</li>
+          <li>Gatsbyjs</li>
+          <li>ES6</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1700" class="about__stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SCSS</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000" class="about__stack">
+          <li>Nodejs</li>
+          <li>Expressjs</li>
+          <li>Mongo</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2300" class="about__stack">
+          <li>Git</li>
+          <li>Firebase</li>
+          <li>Heroku</li>
+        </ul>
+      </div>
+      <div class="about__btn--div" data-aos="fade-up" data-aos-delay="1000">
+        <a class="about__btn" href="mailto:blossybab70@gmail.com">Hire Me</a>
       </div>
     </section>
 
-    <!-- My socials -->
-    <div class="last-section">
-      <hr style="width: 10rem; background: red;">
-
-      <section id="socials" class="socials">
-        <h1>Get in touch!</h1>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <a href=""><i class="i fab fa-twitter"></i> Twitter</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <a href="#"><i class="i fas fa-spinner"></i> Repl.it</a>
-            </div>
-          </div>
+    <!-- more links to my work -->
+    <section data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="works">
+      <hr>
+      <h1 class="works__title">More Projects<span>.</span></h1>
+      <a href="/404.html" class="works__archs">View the archives</a>
+      <div class="works__grid">
+        <div class="works__div works__div--blog">
+          <a href="https://tech-trant-demo.netlify.app/">Visit my blog</a>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <a href="#"><i class="i fab fa-github"></i> Github</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <a href="#"><i class="i fab fa-github"></i>LinkedIn</a>
-            </div>
-          </div>
+        <div class="works__div works__div--portfolio">
+          <a href="https://blo-portfolio.netlify.app/">Visit my portfolio</a>
         </div>
-      </section>
-
-      <!-- technologies -->
-      <section class="technologies">
-        <hr style="visibility: hidden;">
-        <h1>Technologies<span class="span">.</span></h1>
-        <div class="">
-          <div class="html"> <i class="fab fa-html5 fa-3x"></i></div>
-          <div class="css"> <i class="fab fa-css3 fa-3x"></i></div>
-          <div class="js"> <i class="fab fa-js fa-3x"></i></div>
-          <div class="git"><i class="fas fa-code-branch fa-3x"></i></div>
-          <div class="python"><i class="fab fa-python fa-3x"></i></div>
-          <div class="node"> <i class="fab fa-node fa-3x"></i></div>
-          <!-- <div class="node-js"> <i class="fab fa-node-js fa-3x"></i></div> -->
+        <div class="works__div works__div--portfolio">
+          <a href="/404.html">Visit my podcast</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
+    <footer id="contact" class="footer">
+      <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="footer__div">
+        <hr>
+        <p class="footer__note">Have a project you want to talk about?</p>
+        <h1 class="footer__title">Contact me.</h1>
+        <a class="footer__mail-link" href="mailto:blossybab70@gmail.com">blossybab70@gmail.com</a>
+
+        <div class="footer__copyright">
+          Blossom &copy; <span id="date"></span>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
-<!-- 
-<span>Photo by <a href="https://unsplash.com/@donovan_valdivia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrew "Donovan" Valdivia</a> on <a href="https://unsplash.com/t/current-events?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->

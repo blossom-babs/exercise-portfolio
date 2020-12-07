@@ -1,48 +1,61 @@
-   /*------------------
-        Preloader
-    --------------------*/
-   const loader = document.getElementsByClassName("loader");
+let themeCircles = document.getElementsByClassName("circles");
+const links = document.getElementById("nav-links");
+const nav = document.getElementById("hamburger");
 
-   window.addEventListener('load', function () {
-     setTimeout(() => {
-       loader.className += " hidden";
-     }, 1000)
-   });
+// on scroll
+const navDiv = document.getElementById("nav");
+const circle = document.querySelectorAll(".circles");
+const aTag = document.querySelectorAll(".link");
+const burgerDiv = document.querySelectorAll(".ham");
+// add links to styles
+const liTag = document.querySelectorAll(".li");
+// change harmburger shape
+const fl = document.getElementById("fl");
+const sl = document.getElementById("sl");
+const tl = document.getElementById("tl");
+// render date dynamically
+const dateTag = document.getElementById("date");
 
+const date = new Date().getFullYear();
+dateTag.innerHTML = date;
 
-   let themeCircles = document.getElementsByClassName('circles')
+// on scroll function
+window.onscroll = function () {
+  "use strict";
+  if (window.scrollY > 100) {
+    navDiv.classList.add("nav__colored");
+    circle.forEach(function (a) {
+      a.classList.add("circle__colored");
+    });
+    aTag.forEach(function (a) {
+      a.classList.add("link__colored");
+    });
+    burgerDiv.forEach(function (a) {
+      a.classList.add("ham__colored");
+    });
+  } else {
+    navDiv.classList.remove("nav__colored");
+    circle.forEach(function (a) {
+      a.classList.remove("circle__colored");
+    });
+    aTag.forEach(function (a) {
+      a.classList.remove("link__colored");
+    });
+    burgerDiv.forEach(function (a) {
+      a.classList.remove("ham__colored");
+    });
+  }
+};
 
-   let theme = localStorage.getItem('theme')
+// display nav on click for smaller screens
+nav.addEventListener("click", () => {
+  links.classList.toggle("ul__active");
 
-   if (theme == null) {
-     setTheme('light')
-   } else {
-     setTheme(theme)
-   }
-   // const darkTheme = document.getElementById('dark-theme')
+  fl.classList.toggle("fl-active");
+  sl.classList.toggle("sl-active");
+  tl.classList.toggle("tl-active");
 
-   console.log(themeCircles)
-
-   for (let i = 0; themeCircles.length > i; i++) {
-     themeCircles[i].addEventListener('click', function () {
-       let mode = this.dataset.attribute
-       console.log(`option clicked: ${mode}`)
-       setTheme(mode)
-     })
-   }
-
-   function setTheme(mode) {
-     if (mode == 'light') {
-       document.getElementById('theme-style').href = `/css/light.css`
-     } else if (mode == 'blue') {
-       document.getElementById('theme-style').href = '/css/blue.css'
-     } else if (mode == "purple") {
-       document.getElementById('theme-style').href = '/css/purple.css'
-     } else if (mode == 'dark') {
-       document.getElementById('theme-style').href = '/css/styles.css'
-     } else {
-       document.getElementById('theme-style').href = '/css/styles.css'
-     }
-
-     localStorage.setItem('theme', mode)
-   }
+  liTag.forEach(function (a) {
+    a.classList.add("li__active");
+  });
+});

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&Shadows+Into+Light&display=swap');
+
+$font: 'Roboto',
+sans-serif;
+
+.error-page {
+  width: 50%;
+  margin: 0 auto;
+  font-family: $font;
+  //border: 2px solid white;
+
+  height: 100vw;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    height: 50vw;
+  }
+
+}
+
+.alert {
+
+  &__h1 {
+    font-size: 3em;
+
+  }
+
+  &__note {
+    padding: 4rem 0;
+    font-size: 1.5em;
+  }
+
+  &__btn {
+    background-color: #5FF3D1;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 20px;
+    padding: .5rem 1rem;
+
+    &:hover {
+      background: none;
+      color: #CCD6F6;
+      text-decoration: underline;
+      text-decoration-color: #5FF3D1;
+    }
+
+  }
+}
