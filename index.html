@@ -23,16 +23,15 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="body__container">
+<body class="body__container">
+  <div>
 
     <!-- navbar -->
     <section id="nav" class="nav">
       <div class="nav__div">
         <div class="nav__logo">
-          <h1>Blossom
-            <span class=" nav__logo--switch">👱‍♀️</span>
-          </h1>
+          <h1>Blossom</h1>
+          <img id="toggleMode" class=" nav__logo--switch" src="/images/icons/toggle-off.svg" alt="toggle button">
         </div>
         <div>
           <ul id="nav-links" class="ul">
@@ -50,10 +49,10 @@
     </section>
 
     <!-- social media links -->
-    <section class="sm">
+    <section id="dark-md" class="sm">
       <div class="sm__div"><a href="https://www.linkedin.com/in/blossom-babalola/"><img src="/images/icons/linkedin.svg"
             alt="LinkedIn"></a></div>
-      <div class="sm__div"><a href="https://github.com/blossom-babs"><img src="/images/icons/github.svg"
+      <div class="sm__div"><a href="https://github.com/blossom-babs"><img class="sm__img" src="/images/icons/github.svg"
             alt="Github account"></a></div>
       <div class="sm__div"><a href="https://twitter.com/blossom_babs"><img src="/images/icons/twitter.svg"
             alt="Twitter account"></a></div>
@@ -61,23 +60,74 @@
       <div class="sm__vl"></div>
     </section>
 
+    <!-- social media links for light mode -->
+    <section id="light-md" class="sm">
+      <div class="sm__div"><a href="https://www.linkedin.com/in/blossom-babalola/"><img
+            src="/images/icons/linkedinLight.svg" alt="LinkedIn"></a></div>
+      <div class="sm__div"><a href="https://github.com/blossom-babs"><img src="/images/icons/githubLight.svg"
+            alt="Github account"></a></div>
+      <div class="sm__div"><a href="https://twitter.com/blossom_babs"><img src="/images/icons/twitterLight.svg"
+            alt="Twitter account"></a></div>
+      <div class="sm__div"><a href="https://dev.to/blossom" class="sm__dev">Dev</a></div>
+      <div class="sm__vl"></div>
+    </section>
+    <!-- about me-->
+
+    <section id="about" class="about">
+      <h1 class="about__h1 animate__animated animate__pulse animate__infinite infinite">Hey there 👋</h1>
+      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" class="about__alert">I'm Blossom.</h4>
+      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" class="about__desc">I build things for the
+        web.</h4>
+      <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="about__content">Welcome to my corner
+        on the world wide web. Thank you for stopping by. I translate
+        designs into pixel perfect web pages and application,
+        while maintaining a quality code base.
+        I am responsive first and accessebility FrontEnd advocate, I believe in using technology
+        to make lives a little easier. I currently open for positions and work with the following technologies:
+      </p>
+      <div class="about__technologies">
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700" class="about__stack">
+          <li>Reactjs</li>
+          <li>Gatsbyjs</li>
+          <li>ES6</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="about__stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SCSS</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300" class="about__stack">
+          <li>Nodejs</li>
+          <li>Expressjs</li>
+          <li>Mongo</li>
+        </ul>
+        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1600" class="about__stack">
+          <li>Git</li>
+          <li>Firebase</li>
+          <li>Heroku</li>
+        </ul>
+      </div>
+      <div class="about__btn--div" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+        <a class="about__btn" href="mailto:blossybab70@gmail.com">Hire Me</a>
+      </div>
+    </section>
+
     <!-- projects <img src="/images/icons/edit.svg" alt="Dev.to link"> -->
     <section id="projects" class="projects">
-      <!-- <hr class="projects__rule" /> -->
+      <hr>
       <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="projects__topic">
         Featured Projects<span class="span">.</span>
-
       </h1>
       <div class="projects__row">
         <!-- first project -->
         <div class="projects__card">
           <h2 class="projects__identifier"><span class="span">01</span></h2>
           <div class="projects__grid">
-            <div class="projects__img--div">
+            <div class="projects__img--div" data-aos="zoom-in-right" data-aos-duration="3000">
               <img class="projects__img" src="/images/afrig_4.png">
             </div>
-            <div class="projects__description">
-              <h3 class="projects__name">AfriG</h3>
+            <div class="projects__description data-aos=" zoom-in-left" data-aos-duration="3000" data-aos-delay="200"">
+              <h3 class=" projects__name">AfriG</h3>
               <p class="projects__description--content">
                 AfriG is a modern Ecommerce platform for showcasing an africa based clothing line.
                 <button class="projects__icons">
@@ -104,10 +154,10 @@
         <div class="projects__card">
           <h2 class="projects__identifier"><span class="span">02</span></h2>
           <div class="projects__grid">
-            <div data-aos="zoom-in-right" data-aos-duration="3000" class="projects__img--div">
+            <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-delay="300" class="projects__img--div">
               <img class="projects__img" src="/images/portfolio_light-mode.png">
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="300" class="projects__description">
+            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="400" class="projects__description">
               <h3 class="projects__name">Portfolio</h3>
               <p class="projects__description--content">
                 A visual documentation of most of my past projectsa developer's projects.
@@ -134,10 +184,10 @@
         <div class="projects__card">
           <h2 class="projects__identifier"><span class="span">03</span></h2>
           <div class="projects__grid">
-            <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-delay="400" class="projects__img--div">
+            <div data-aos="zoom-in-right" data-aos-duration="3000" data-aos-delay="500" class="projects__img--div">
               <img class="projects__img" src="/images/tech_trant.png">
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="500" class="projects__description">
+            <div data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="600" class="projects__description">
               <h3 class="projects__name">Tech Trant</h3>
               <p class="projects__description--content">
                 Tech Trant is a javascript based appblog site.
@@ -168,48 +218,7 @@
       </div>
     </section>
 
-    <!-- about me-->
 
-    <section id="about" class="about">
-      <hr>
-      <h1 class="about__h1 animate__animated animate__pulse animate__infinite infinite">Hey there 👋</h1>
-
-      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="about__alert">I'm Blossom.</h4>
-      <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700" class="about__desc">I build things for the
-        web.</h4>
-      <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" class="about__content">Welcome to my corner
-        on the world wide web. Thank you for stopping by. I translate
-        designs into pixel perfect web pages and application,
-        while maintaining a quality code base.
-        I am responsive first and accessebility FrontEnd advocate, I believe in using technology
-        to make lives a little easier. I currently open for positions and work with the following technologies:
-      </p>
-      <div class="about__technologies">
-        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500" class="about__stack">
-          <li>Reactjs</li>
-          <li>Gatsbyjs</li>
-          <li>ES6</li>
-        </ul>
-        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1700" class="about__stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-        </ul>
-        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000" class="about__stack">
-          <li>Nodejs</li>
-          <li>Expressjs</li>
-          <li>Mongo</li>
-        </ul>
-        <ul data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2300" class="about__stack">
-          <li>Git</li>
-          <li>Firebase</li>
-          <li>Heroku</li>
-        </ul>
-      </div>
-      <div class="about__btn--div" data-aos="fade-up" data-aos-delay="1000">
-        <a class="about__btn" href="mailto:blossybab70@gmail.com">Hire Me</a>
-      </div>
-    </section>
 
     <!-- more links to my work -->
     <section data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" class="works">

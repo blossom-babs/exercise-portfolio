@@ -13,11 +13,26 @@ const liTag = document.querySelectorAll(".li");
 const fl = document.getElementById("fl");
 const sl = document.getElementById("sl");
 const tl = document.getElementById("tl");
+//toggle modes
+const mode = document.getElementById("toggleMode");
+const style = document.getElementById("theme-style");
 // render date dynamically
 const dateTag = document.getElementById("date");
 
 const date = new Date().getFullYear();
 dateTag.innerHTML = date;
+
+// switch modes
+mode.addEventListener("click", () => {
+  let word = mode.src;
+  if (word.includes("toggle-off")) {
+    style.href = "/css/light.css";
+    mode.src = "/images/icons/toggle-on.svg";
+  } else {
+    style.href = "/css/styles.css";
+    mode.src = "/images/icons/toggle-off.svg";
+  }
+});
 
 // on scroll function
 window.onscroll = function () {
