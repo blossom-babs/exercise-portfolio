@@ -23,16 +23,16 @@ const date = new Date().getFullYear();
 dateTag.innerHTML = date;
 
 // switch modes
-mode.addEventListener("click", () => {
-  let word = mode.src;
-  if (word.includes("toggle-off")) {
-    style.href = "/css/light.css";
-    mode.src = "/images/icons/toggle-on.svg";
-  } else {
-    style.href = "/css/styles.css";
-    mode.src = "/images/icons/toggle-off.svg";
-  }
-});
+// mode.addEventListener("click", () => {
+//   let word = mode.src;
+//   if (word.includes("toggle-off")) {
+//     style.href = "/css/light.css";
+//     mode.src = "/images/icons/toggle-on.svg";
+//   } else {
+//     style.href = "/css/styles.css";
+//     mode.src = "/images/icons/toggle-off.svg";
+//   }
+// });
 
 // on scroll function
 window.onscroll = function () {

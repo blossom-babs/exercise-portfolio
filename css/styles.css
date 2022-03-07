@@ -179,7 +179,7 @@ hr {
 
 .projects {
   position: relative;
-  top: 20rem;
+  top: 15rem;
   width: 70%;
   margin: 0 auto;
 }
@@ -281,11 +281,16 @@ hr {
 .about__desc {
   font-weight: lighter;
   font-size: 2em;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .about__content {
   line-height: 2;
   font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .about__content {
+    width: 70%;
+  }
 }
 .about__cta {
   font-size: 18px;
@@ -372,7 +377,7 @@ hr {
 
 .footer {
   position: relative;
-  top: 50rem;
+  top: 25rem;
   margin: 0 auto;
   width: 70%;
 }
@@ -389,12 +394,35 @@ hr {
   font-size: 1.5em;
   font-weight: lighter;
 }
+@media screen and (min-width: 768px) {
+  .footer__note {
+    width: 70%;
+  }
+}
 .footer__mail-link {
   color: #5FF3D1;
 }
 .footer__copyright {
   padding: 1rem 0;
   font-size: 14px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.coming-soon {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-bottom: 3rem;
 }
 
 .error-page {
